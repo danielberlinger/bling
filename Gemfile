@@ -6,7 +6,9 @@ gem 'rails', '3.1.2'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+
 gem 'guestlist'
+#gem 'rails_warden'
 
 
 # Gems used only for assets and not required

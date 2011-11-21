@@ -1,8 +1,10 @@
 <%= link_to 'New Blog', new_blog_path %>
 
+<%= current_user.first_name %>
+
 <br />
 
-<% @blogs.each do |blog| %>
+<%- @blogs.each do |blog| -%>
 <article class='post'>
   <div class='date'>
     <%= link_to blog.created_at.to_formatted_s(:blog), blog %>
@@ -13,7 +15,7 @@
     <%= blog.content %>
   </div>
 </article>
-<% end %>
+<%- end -%>
 
 
 
