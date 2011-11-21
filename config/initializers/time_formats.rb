@@ -1,0 +1,1 @@
+Time::DATE_FORMATS[:blog] = "%A %b %d, %Y"

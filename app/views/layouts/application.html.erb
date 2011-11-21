@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <link href='' name='shortcut icon' type='image/ico' />
+  <link href='' name='apple-touch-icon' />
+  <link href='/about' rel='author' />
+  <meta charset="utf-8">
   <title>Bling</title>
+  <meta name="description" content="Scribbles from dev etc.">
+  <meta name="author" content="Daniel Berlinger">
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <header>
+  <span id='site-title'>
+    <a href='/'>
+      <span id='first-name'>Daniel</span>
+      <span id='last-name'>Berlinger</span>
+    </a>
+  </span>
+  <nav>
+    <ul>
+      <li><a href='/about'>About</a></li>
+      <li><a href='/contact'>Contact</a></li>
+      <li><a href='/follow'>Follow</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div id='page'>
+    <div class='main'>
+      <div class='blog'>
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
