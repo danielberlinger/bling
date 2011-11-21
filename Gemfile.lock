@@ -42,7 +42,12 @@ GEM
     erubis (2.7.0)
     execjs (1.2.9)
       multi_json (~> 1.0)
+    guestlist (0.0.1)
+      httparty (>= 0.5.2)
     hike (1.2.1)
+    httparty (0.8.1)
+      multi_json
+      multi_xml
     i18n (0.6.0)
     jquery-rails (1.0.17)
       railties (~> 3.0)
@@ -54,6 +59,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.3)
+    multi_xml (0.4.1)
     polyglot (0.3.3)
     rack (1.3.5)
     rack-cache (1.1)
@@ -110,6 +116,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.1)
+  guestlist
   jquery-rails
   rails (= 3.1.2)
   sass-rails (~> 3.1.5.rc.2)
